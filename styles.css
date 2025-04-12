@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6e072d;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 18px 27px; /* vertical = 18px (font-size), horizontal = 1.5 * 18 = 27px */
+  border-right: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar li:hover {
+  background-color: #b90e4d;
+}
+
+.left-nav li.no-border-right {
+  border-right: none;
+}
+
+.right-nav li.no-border-left {
+  border-left: none;
+  border-right: 2px solid white;
+}
